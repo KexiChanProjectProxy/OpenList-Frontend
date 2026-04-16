@@ -187,9 +187,16 @@ export const usePath = () => {
 
   const handleErr = (msg: string, code?: number) => {
     if (code === 403) {
-      ObjStore.setState(State.NeedPassword)
-      if (retry_pass) {
-        notify.error(msg)
+      const lowerMsg = msg.toLowerCase()
+      const isPasswordError =
+        lowerMsg.includes("password") || msg.includes("密码")
+      if (isPasswordError) {
+        ObjStore.setState(State.NeedPassword)
+        if (retry_pass) {
+          notify.error(msg)
+        }
+      } else {
+        ObjStore.setErr(`403 Forbidden: ${msg}`)
       }
     } else {
       const basePath = me().base_path
