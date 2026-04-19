@@ -5,13 +5,13 @@ export { i18n }
 // glob search by Vite
 const langs = import.meta.glob("~/lang/*/index.json", {
   eager: true,
-  import: "default",
+  import: "lang",
 })
 
 // all available languages
 export const languages = Object.keys(langs).map((langPath) => {
   const langCode = langPath.split("/")[3]
-  const langName = (langs[langPath] as { lang: string }).lang
+  const langName = langs[langPath] as string
   return { code: langCode, lang: langName }
 })
 
