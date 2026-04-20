@@ -2,18 +2,10 @@ import * as i18n from "@solid-primitives/i18n"
 import { createResource, createSignal } from "solid-js"
 export { i18n }
 
-// glob search by Vite
-const langs = import.meta.glob("~/lang/*/index.json", {
-  eager: true,
-  import: "default",
-})
-
-// all available languages
-export const languages = Object.keys(langs).map((langPath) => {
-  const langCode = langPath.split("/")[3]
-  const langName = (langs[langPath] as { lang: string }).lang
-  return { code: langCode, lang: langName }
-})
+export const languages = [
+  { code: "en", lang: "English" },
+  { code: "zh-CN", lang: "简体中文" },
+] as const
 
 // determine browser's default language
 const userLang = navigator.language.toLowerCase()
@@ -35,7 +27,7 @@ if (!languages.some((lang) => lang.code === initialLang)) {
 // use `type` to not include the actual dictionary in the bundle
 import type * as en from "~/lang/en/entry"
 
-export type Lang = keyof typeof langs
+export type Lang = (typeof languages)[number]["code"]
 export type RawDictionary = typeof en.dict
 export type Dictionary = i18n.Flatten<RawDictionary>
 
