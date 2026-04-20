@@ -31,10 +31,16 @@ export type Lang = (typeof languages)[number]["code"]
 export type RawDictionary = typeof en.dict
 export type Dictionary = i18n.Flatten<RawDictionary>
 
+const dictionaryModules = import.meta.glob("~/lang/*/entry.ts")
+
 // Fetch and flatten the dictionary
 const fetchDictionary = async (locale: Lang): Promise<Dictionary> => {
   try {
-    const dict: RawDictionary = (await import(`~/lang/${locale}/entry.ts`)).dict
+    const loadDictionary = dictionaryModules[`/src/lang/${locale}/entry.ts`]
+    if (!loadDictionary) {
+      throw new Error(`Dictionary module not found for ${locale}`)
+    }
+    const dict: RawDictionary = (await loadDictionary()).dict
     return i18n.flatten(dict) // Flatten dictionary for easier access to keys
   } catch (err) {
     console.error(`Error loading dictionary for locale: ${locale}`, err)
