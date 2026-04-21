@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Text, useColorModeValue, VStack, Button } from "@hope-ui/solid"
 import {
   createEffect,

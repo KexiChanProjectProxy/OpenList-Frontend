@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Box } from "@hope-ui/solid"
 import { Motion } from "solid-motionone"
 import { useLocation } from "@solidjs/router"

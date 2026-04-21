@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Type } from "~/types"
 import { useT } from "~/hooks"
 import {

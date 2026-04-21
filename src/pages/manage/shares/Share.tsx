@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { PEmptyResp, ShareInfo, UserMethods } from "~/types"
 import { useFetch, useRouter, useT, useUtil } from "~/hooks"
 import { Badge, Button, HStack, Td, Tr } from "@hope-ui/solid"

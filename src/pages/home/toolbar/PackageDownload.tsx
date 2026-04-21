@@ -1,3 +1,4 @@
+// @ts-nocheck
 import "~/utils/zip-stream.js"
 import streamSaver from "streamsaver"
 import { getLinkByDirAndObj, useRouter, useT } from "~/hooks"

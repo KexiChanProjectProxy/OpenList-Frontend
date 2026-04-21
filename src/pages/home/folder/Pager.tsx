@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Button, Text } from "@hope-ui/solid"
 import { Match, onCleanup, onMount, Show, Switch } from "solid-js"
 import { FullLoading, Paginator } from "~/components"

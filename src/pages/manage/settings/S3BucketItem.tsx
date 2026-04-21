@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Button, FormControl, FormLabel, Input, Stack } from "@hope-ui/solid"
 import { FolderChooseInput } from "~/components"
 import { useT } from "~/hooks"

@@ -17,10 +17,11 @@ const defaultLang =
   "en"
 
 // Get initial language from localStorage or fallback to defaultLang
-export let initialLang = localStorage.getItem("lang") ?? defaultLang
+export let initialLang: Lang =
+  (localStorage.getItem("lang") as Lang) ?? defaultLang
 
 if (!languages.some((lang) => lang.code === initialLang)) {
-  initialLang = defaultLang
+  initialLang = defaultLang as Lang
 }
 
 // Type imports
@@ -40,8 +41,8 @@ const fetchDictionary = async (locale: Lang): Promise<Dictionary> => {
     if (!loadDictionary) {
       throw new Error(`Dictionary module not found for ${locale}`)
     }
-    const dict: RawDictionary = (await loadDictionary()).dict
-    return i18n.flatten(dict) // Flatten dictionary for easier access to keys
+    const mod = (await loadDictionary()) as { dict: RawDictionary }
+    return i18n.flatten(mod.dict) // Flatten dictionary for easier access to keys
   } catch (err) {
     console.error(`Error loading dictionary for locale: ${locale}`, err)
     throw new Error(`Failed to load dictionary for ${locale}`)

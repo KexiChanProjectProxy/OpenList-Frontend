@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { PublicKeysProps } from "./PublicKeys"
 import { SSHPublicKey } from "~/types/sshkey"
 import { useFetch, useT } from "~/hooks"

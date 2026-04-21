@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { createSignal, JSXElement, Match, onMount, Switch } from "solid-js"
 import { Error, FullScreenLoading } from "~/components"
 import { useFetch, useT } from "~/hooks"

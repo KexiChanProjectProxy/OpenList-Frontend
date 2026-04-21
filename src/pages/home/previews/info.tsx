@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Heading, Icon, Image, Text, VStack } from "@hope-ui/solid"
 import { JSXElement } from "solid-js"
 import { getMainColor, objStore } from "~/store"

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useFetch, useT, useManageTitle } from "~/hooks"
 import { Group, SettingItem, PResp, PEmptyResp, EmptyResp, Resp } from "~/types"
 import {

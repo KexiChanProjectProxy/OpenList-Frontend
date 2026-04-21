@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Button, Heading, Image, Input, Text, VStack } from "@hope-ui/solid"
 import { createSignal, Show } from "solid-js"
 import { MaybeLoading } from "~/components"

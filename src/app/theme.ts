@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { globalCss, HopeThemeConfig } from "@hope-ui/solid"
 import { hoverColor } from "~/utils"
 

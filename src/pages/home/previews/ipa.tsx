@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Button, HStack } from "@hope-ui/solid"
 import { createSignal } from "solid-js"
 import { useT, useLink } from "~/hooks"

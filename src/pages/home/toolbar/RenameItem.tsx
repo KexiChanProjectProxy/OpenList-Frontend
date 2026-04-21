@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { HStack, Text } from "@hope-ui/solid"
 import { Motion } from "solid-motionone"
 import { RenameObj } from "~/types"

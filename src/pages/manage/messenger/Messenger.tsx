@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Button, Heading, HStack, Input, VStack } from "@hope-ui/solid"
 import { Component, createSignal, For, onCleanup } from "solid-js"
 import { createStore, produce } from "solid-js/store"

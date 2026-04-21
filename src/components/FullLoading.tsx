@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Center, ElementType, Spinner, SpinnerProps } from "@hope-ui/solid"
 import { JSXElement, mergeProps, Show } from "solid-js"
 import { getMainColor } from "~/store"

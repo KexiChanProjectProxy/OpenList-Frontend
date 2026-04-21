@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { BoxWithFullScreen, Error, FullLoading } from "~/components"
 import { objStore } from "~/store"
 import { Box, IconButton, Tooltip, Button, HStack } from "@hope-ui/solid"

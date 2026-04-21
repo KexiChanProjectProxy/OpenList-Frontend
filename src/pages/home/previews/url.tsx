@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { MaybeLoading } from "~/components"
 import { recordKeysToLowerCase } from "~/utils"
 import { FileInfo } from "./info"

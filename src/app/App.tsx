@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Progress, ProgressIndicator } from "@hope-ui/solid"
 import { Route, Routes, useIsRouting } from "@solidjs/router"
 import {

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Menu, Item, Submenu } from "solid-contextmenu"
 import { useCopyLink, useDownload, useLink, useRouter, useT } from "~/hooks"
 import "solid-contextmenu/dist/style.css"

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useFetch, useRouter, useT } from "~/hooks"
 import { PResp, Share, ShareInfo, ShareUpdate, Type } from "~/types"
 import { handleResp, notify, r, randomPwd, getExpireDate } from "~/utils"

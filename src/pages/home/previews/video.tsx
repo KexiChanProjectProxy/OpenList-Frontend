@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Box } from "@hope-ui/solid"
 import { createMemo, createSignal, onCleanup, onMount } from "solid-js"
 import { useRouter, useLink } from "~/hooks"

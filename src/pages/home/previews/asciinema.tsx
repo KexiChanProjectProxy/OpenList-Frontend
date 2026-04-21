@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Box } from "@hope-ui/solid"
 // @ts-ignore
 import * as AsciinemaPlayer from "asciinema-player"

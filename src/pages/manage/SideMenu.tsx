@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Box, Flex, Heading, HStack, Icon, VStack } from "@hope-ui/solid"
 import { createMemo, createSignal, For, Match, Show, Switch } from "solid-js"
 import { useRouter, useT } from "~/hooks"

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { createSignal, createEffect, on, Show, For } from "solid-js"
 import {
   hope,

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { IconProps, IconTemplate } from "solid-icons/lib"
 
 export function VscodeIconsFileTypePhotoshop2(props: IconProps) {

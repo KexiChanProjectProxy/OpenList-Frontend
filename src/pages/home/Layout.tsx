@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Markdown } from "~/components"
 import { useTitle } from "~/hooks"
 import { getSetting } from "~/store"

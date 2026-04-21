@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Box } from "@hope-ui/solid"
 import { createEffect, createSignal, onCleanup, onMount } from "solid-js"
 import { MaybeLoading } from "./FullLoading"

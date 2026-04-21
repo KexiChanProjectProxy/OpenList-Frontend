@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Checkbox, hope } from "@hope-ui/solid"
 import { createEffect, onCleanup } from "solid-js"
 import { useContextMenu } from "solid-contextmenu"

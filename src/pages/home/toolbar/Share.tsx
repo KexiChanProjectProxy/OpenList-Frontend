@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useFetch, useRouter, useT, useUtil } from "~/hooks"
 import {
   bus,

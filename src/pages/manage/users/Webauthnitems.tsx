@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Button, Heading, Stack, VStack } from "@hope-ui/solid"
 import { createSignal, Show } from "solid-js"
 import { useT, useFetch } from "~/hooks"

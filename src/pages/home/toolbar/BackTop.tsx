@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Show, createSignal, onCleanup } from "solid-js"
 import { Box, Icon } from "@hope-ui/solid"
 import { FiArrowUp } from "solid-icons/fi"

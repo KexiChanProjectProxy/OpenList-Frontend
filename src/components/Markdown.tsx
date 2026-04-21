@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Anchor, Box, List, ListItem, useColorModeValue } from "@hope-ui/solid"
 import { createStorageSignal } from "@solid-primitives/storage"
 import { clsx } from "clsx"

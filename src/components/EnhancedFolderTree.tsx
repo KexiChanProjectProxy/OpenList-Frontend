@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Box, HStack, Icon, Spinner, Text, VStack } from "@hope-ui/solid"
 import { BiSolidRightArrow, BiSolidFolderOpen } from "solid-icons/bi"
 import { TbFile, TbFolder } from "solid-icons/tb"

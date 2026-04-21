@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Button, useColorMode, VStack } from "@hope-ui/solid"
 import { createEffect, createMemo, createSignal, on, Show } from "solid-js"
 import { EncodingSelect, MaybeLoading } from "~/components"

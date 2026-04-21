@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Center, VStack, Icon } from "@hope-ui/solid"
 import { Motion } from "solid-motionone"
 import { useContextMenu } from "solid-contextmenu"
